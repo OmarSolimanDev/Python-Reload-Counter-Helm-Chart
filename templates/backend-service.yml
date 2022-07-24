@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: red
+  namespace: {{ .Values.namespace.Name | default "default" }}
+  labels:
+    {{- include "labels" . }}
+
+spec:
+  type: ClusterIP
+  ports:
+  - name: port-backend
+    port: {{ .Values.ports.redis_port | default 6379 }}
+    targetPort: {{ .Values.ports.redis_port | default 6379 }}
+    protocol: TCP
+  selector:
+    name: myredis    

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{ .Release.Name }}-deployment"
+  namespace: {{ .Values.namespace.Name | default "default" }}
+spec:
+  template:
+    metadata:
+      name: python
+      labels:
+        app: {{ .Values.app_template.name }}
+        {{- include "labels" . | indent 4}}
+    spec:
+      containers:
+      - name: my-container
+        image: "{{- .Values.image.repository }}:{{- .Values.image.version }}"
+        ports:
+        - containerPort: {{ .Values.ports.redis_port | default 6379 }}
+        - containerPort: {{ .Values.ports.app_port | default 8000 }}
+  replicas: {{ .Values.replication_count }}
+  selector:
+    matchLabels:
+      app: {{ .Values.app_template.name }}
+
+
