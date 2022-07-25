@@ -1,0 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 1.0.0
+description: A web application
+name: reload-counter
+type: application
+version: 1.0.0
+
+...
+files:
+  reload-counter-1.0.0.tgz: sha256:a7eca91707798a0c779e96fc339c00894aa71a9548784b5d3cbab30656249b73
+-----BEGIN PGP SIGNATURE-----
+
+wsBcBAEBCgAQBQJi3pZfCRBt4Hw6bsJ/EgAA1KgIADPA2sO1nSXdqP1JsGFM3t0G
+zzjnBKag/Wgnxy1V1trLq/Ial5zdDdnAuEkMpMW0T1bGrIzPf2yHvuf/bqMlUw20
+XIdsfnzc8je1T66J3KWLv3PQDoN09vDNtWabpPlkiuES4dat2aG2KfpLol6vfzz8
+G4MshJlt4ASJyc10XrzzMhnUtSQhsfkXyPwpzNPvE4Y101sAqmRGjWwaeR2U+gJQ
+OnYS3Vbg+U/gU640KmBxLV5vS8ghw/AVhucVys79LQShTKfzhk48C18VyLSrSMl2
+VCxATIg0KpddtQwm7aSlegOPsEwfbx4RjOfCJ8BsvBbaytrzJWlJ3/HsQfgA8P0=
+=fVXi
+-----END PGP SIGNATURE-----
