@@ -1,6 +1,6 @@
 image: 
-  repository: myapp # local image 
-  version: "1.0"
+  repository: omarkamal1/my-reload-counter-py-app
+  version: v1.0.0
 
 namespace:
   Name: default
