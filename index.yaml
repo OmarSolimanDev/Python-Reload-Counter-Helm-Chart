@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  reload-counter:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-07-25T16:15:29.642313627+02:00"
+    description: A web application
+    digest: a7eca91707798a0c779e96fc339c00894aa71a9548784b5d3cbab30656249b73
+    name: reload-counter
+    type: application
+    urls:
+    - reload-counter-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-25T16:15:29.634053931+02:00"
